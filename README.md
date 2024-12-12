@@ -55,6 +55,13 @@ This calculator is built on the fundamental principles of elementary arithmetic 
  ### Running the Calculator:
 
    - Execute the script. The REPL should start.
+       ```bash
+       calc> BigInt("12345678901234567890") + BigInt("98765432109876543210")
+       calc> BigInt("10").factorial()
+       calc> to_base 255 16
+       calc> from_base 16 FF
+       calc> Fraction(4, 8)
+       ```
 
  ### Input Format:
 
