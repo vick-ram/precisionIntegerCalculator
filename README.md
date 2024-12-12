@@ -1,10 +1,10 @@
-Arbitrary Precision Integer Calculator
+# Arbitrary Precision Integer Calculator
 This project implements an arbitrary precision integer calculator. It's built from scratch, without relying on any external libraries for its core mathematical functions, providing a deep dive into the mechanics of arithmetic operations on arbitrarily large integers.
 
-Features
-Arbitrary Precision: Handles integers of any size, limited only by available memory.
+## Features
+**Arbitrary Precision:** Handles integers of any size, limited only by available memory.
 
-Core Operations:
+**Core Operations:**
 
 Addition (+)
 
@@ -20,112 +20,112 @@ Exponentiation (^)
 
 Factorial (!)
 
-REPL (Read-Eval-Print Loop): Interactive command-line interface for calculations.
+**REPL (Read-Eval-Print Loop):** Interactive command-line interface for calculations.
 
-Non-Decimal Bases (Bonus): Supports input and output in bases from 2 to 36 (using digits 0-9 and letters A-Z).
+**Non-Decimal Bases (Bonus):** Supports input and output in bases from 2 to 36 (using digits 0-9 and letters A-Z).
 
-Fractions (Bonus): Limited basic fractional input/output support.
+**Fractions (Bonus):** Limited basic fractional input/output support.
 
-Logarithms (Bonus): Integer base Logarithms.
+**Logarithms (Bonus):** Integer base Logarithms.
 
-Error Handling: Provides clear error messages for invalid input or operations.
+**Error Handling:** Provides clear error messages for invalid input or operations.
 
-How It Works
+## How It Works
 This calculator is built on the fundamental principles of elementary arithmetic operations. Here's a high-level overview of how the core features are implemented:
 
-Arbitrary Precision Representation: Integers are internally represented as a sequence (e.g., a list or array) of digits. This allows for numbers that far exceed the limits of built-in integer types.
+**Arbitrary Precision Representation:** Integers are internally represented as a sequence (e.g., a list or array) of digits. This allows for numbers that far exceed the limits of built-in integer types.
 
-Addition: Implemented using the standard "carry-over" method taught in primary school.
+**Addition:** Implemented using the standard "carry-over" method taught in primary school.
 
-Subtraction: Implemented using the standard "borrow" method.
+**Subtraction:** Implemented using the standard "borrow" method.
 
-Multiplication: Implemented using a digit-by-digit multiplication and accumulation process, similar to long multiplication.
+**Multiplication:** Implemented using a digit-by-digit multiplication and accumulation process, similar to long multiplication.
 
-Division and Modulo: Implemented using long division algorithm.
+**Division and Modulo:** Implemented using long division algorithm.
 
-Exponentiation: Implemented using repeated multiplication (can be optimized using techniques like "exponentiation by squaring").
+**Exponentiation:** Implemented using repeated multiplication (can be optimized using techniques like "exponentiation by squaring").
 
-Factorial: Implemented using iterative or recursive multiplication.
+**Factorial:** Implemented using iterative or recursive multiplication.
 
-Base Conversion: Conversion between decimal representation and the specified base is handled algorithmically.
+**Base Conversion:** Conversion between decimal representation and the specified base is handled algorithmically.
 
-REPL: The REPL takes user input, parses it, performs the calculation, and prints the result.
+**REPL:** The REPL takes user input, parses it, performs the calculation, and prints the result.
 
-Usage
-Running the Calculator:
+## Usage
+ ### Running the Calculator:
 
-Execute the script. The REPL should start.
+   - Execute the script. The REPL should start.
 
-Input Format:
+ ### Input Format:
 
-Integers: Enter integers in the specified base (decimal by default).
+   - **Integers:** Enter integers in the specified base (decimal by default).
 
-Operators: Use +, -, *, /, %, ^ for addition, subtraction, multiplication, integer division, modulo, and exponentiation, respectively.
+    - **Operators:** Use +, -, *, /, %, ^ for addition, subtraction, multiplication, integer division, modulo, and exponentiation, respectively.
 
-Factorial: Use ! after an integer.
+    - **Factorial:** Use ! after an integer.
 
-Base Specification: To input a number in a specific base prefix the number with base_ e.g., 2_101. To output a number in a base use output base_ and all subsequent output will be in this base until another base output is set.
+    - **Base Specification:** To input a number in a specific base prefix the number with base_ e.g., 2_101. To output a number in a base use output base_ and all subsequent output will be in this base until another base output is set.
 
-Fractions: To input a basic fraction a/b or a / b
+    - **Fractions:** To input a basic fraction a/b or a / b
 
-Logarithms: To calculate the base b integer logarithm of a number a, type log_b(a) e.g. log_2(128) or log_5(200).
+    - **Logarithms:** To calculate the base b integer logarithm of a number a, type log_b(a) e.g. log_2(128) or log_5(200).
 
-Whitespace: Whitespace between numbers and operators will be ignored, e.g. 2 + 2 or 2+2.
+    - **Whitespace:** Whitespace between numbers and operators will be ignored, e.g. 2 + 2 or 2+2.
 
-Expressions: The calculator evaluates expressions from left to right without precedence. Use parentheses as needed to dictate evaluation order.
+- **Expressions:** The calculator evaluates expressions from left to right without precedence. Use parentheses as needed to dictate evaluation order.
 
-Output Base: By default output will be in base 10, to change the output base use output base_N where N is the new output base.
+    - **Output Base:** By default output will be in base 10, to change the output base use output base_N where N is the new output base.
 
-Examples:
+### Examples:
 
-12345 + 67890
+- **12345 + 67890**
 
-100000000000000000000000000000000 * 2
+- **100000000000000000000000000000000 * 2**
 
-10 ^ 5
+- **10 ^ 5**
 
-5!
+- **5!**
 
-2_101 + 2_11 (Addition in base 2)
+- **2_101 + 2_11 (Addition in base 2)**
 
-1000 / 3
+- **1000 / 3**
 
-1000 % 3
+- **1000 % 3**
 
-20/3 + 1/2
+- **20/3 + 1/2**
 
-output base_16
+- **output base_16**
 
-log_2(16)
+- **log_2(16)**
 
-exit (to quit the REPL)
+- **exit (to quit the REPL)**
 
-Error Messages:
+### Error Messages:
 
 Invalid input and operators will result in clear error messages.
 
 Attempting to divide by 0 will also result in a clear error message.
 
-Implementation Notes
-Language: (Specify language you've used here, e.g., Python, Java, C++)
+## Implementation Notes
+- Language: Python
 
-No External Libraries: The core logic for arithmetic operations is implemented from scratch, not relying on external libraries for these tasks. (e.g., In Python we don't use int or decimal and in C++ we don't use BigInteger classes).
+- No External Libraries: The core logic for arithmetic operations is implemented from scratch, not relying on external libraries for these tasks. (e.g., In Python we don't use int or decimal and in C++ we don't use BigInteger classes).
 
-Code Structure: The project is structured into functions or classes, with a separation of concerns. Typically:
+- Code Structure: The project is structured into functions or classes, with a separation of concerns. Typically:
 
-A class to store a big integer using an array of int.
+  - A class to store a big integer using an array of int.
 
-A class to deal with arbitrary precision fractions.
+  - A class to deal with arbitrary precision fractions.
 
-Arithmetic operations (addition, subtraction, multiplication, division, modulo, exponentiation, factorial) are implemented as separate functions.
+  - Arithmetic operations (addition, subtraction, multiplication, division, modulo, exponentiation, factorial) are implemented as separate functions.
 
-Base conversion is implemented as a specific utility function.
+  - Base conversion is implemented as a specific utility function.
 
-The REPL is implemented as a loop that takes input, parses it, performs calculations and then prints the result.
+  - The REPL is implemented as a loop that takes input, parses it, performs calculations and then prints the result.
 
-Bonus Features
-Non-Decimal Bases: The calculator can handle numbers in bases from 2 to 36.
+## Bonus Features
+- Non-Decimal Bases: The calculator can handle numbers in bases from 2 to 36.
 
-Fractions: The calculator supports basic operations on fractions.
+- Fractions: The calculator supports basic operations on fractions.
 
-Logarithms: The calculator implements base b integer logarithms, log_b(a) e.g. the base 2 integer logarithm of 16 is 4.
+- Logarithms: The calculator implements base b integer logarithms, log_b(a) e.g. the base 2 integer logarithm of 16 is 4.
