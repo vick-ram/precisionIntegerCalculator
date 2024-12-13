@@ -5,13 +5,13 @@ This project implements an arbitrary precision integer calculator. It's built fr
 - **Arbitrary Precision:** Handles integers of any size, limited only by available memory.
 
 - **Core Operations:**
-    - Addition (+)
-    - Subtraction (-)
-    - Multiplication (*)
-    - Division (/) (with integer quotient)
-    - Modulo (%)
-    - Exponentiation (^)
-    - Factorial (``!``)
+    - Addition (`+`)
+    - Subtraction (`-`)
+    - Multiplication (`*`)
+    - Division (`/`) (with integer quotient)
+    - Modulo (`%`)
+    - Exponentiation (`^`)
+    - Factorial (`!`)
 
 - **REPL (Read-Eval-Print Loop):** Interactive command-line interface for calculations.
 - **Non-Decimal Bases (Bonus):** Supports input and output in bases from 2 to 36 (using digits 0-9 and letters A-Z).
@@ -33,7 +33,7 @@ This calculator is built on the fundamental principles of elementary arithmetic 
 - **REPL:** The REPL takes user input, parses it, performs the calculation, and prints the result.
 
 ## Usage
- ### Running the Calculator:
+ ### 1. Running the Calculator:
 
    - Execute the script. The REPL should start.
       ```python
@@ -49,25 +49,17 @@ This calculator is built on the fundamental principles of elementary arithmetic 
        calc> 5!
        ```
 
- ### Input Format:
+ ### 2. Input Format:
 
    - **Integers:** Enter integers in the specified base (decimal by default).
-
-    - **Operators:** Use +, -, *, /, %, ^ for addition, subtraction, multiplication, integer division, modulo, and exponentiation, respectively.
-
-    - **Factorial:** Use ! after an integer.
-
-    - **Base Specification:** To input a number in a specific base prefix the number with base_ e.g., 2_101. To output a number in a base use output base_ and all subsequent output will be in this base until another base output is set.
-
-    - **Fractions:** To input a basic fraction a/b or a / b
-
-    - **Logarithms:** To calculate the base b integer logarithm of a number a, type log_b(a) e.g. log_2(128) or log_5(200).
-
-    - **Whitespace:** Whitespace between numbers and operators will be ignored, e.g. 2 + 2 or 2+2.
-
-- **Expressions:** The calculator evaluates expressions from left to right without precedence. Use parentheses as needed to dictate evaluation order.
-
-    - **Output Base:** By default output will be in base 10, to change the output base use output base_N where N is the new output base.
+   - **Operators:** Use +, -, *, /, %, ^ for addition, subtraction, multiplication, integer division, modulo, and exponentiation, respectively.
+   - **Factorial:** Use ! after an integer.
+   - **Base Specification:** To input a number in a specific base prefix the number with base_ e.g., 2_101. To output a number in a base use output base_ and all subsequent output will be in this base until another base output is set.
+   - **Fractions:** To input a basic fraction a/b or a / b
+   - **Logarithms:** To calculate the base b integer logarithm of a number a, type log_b(a) e.g. log_2(128) or log_5(200).
+   - **Whitespace:** Whitespace between numbers and operators will be ignored, e.g. 2 + 2 or 2+2.
+   - **Expressions:** The calculator evaluates expressions from left to right without precedence. Use parentheses as needed to dictate evaluation order.
+   - **Output Base:** By default output will be in base 10, to change the output base use output base_N where N is the new output base.
 
 ### 3. Examples:
 
