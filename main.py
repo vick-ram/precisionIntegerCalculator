@@ -1,4 +1,6 @@
-from . import repl
+from repl import repl
+
+
 """
     Main Entry point of the program
 """
